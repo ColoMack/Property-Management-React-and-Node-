@@ -64,6 +64,7 @@
   border-bottom: solid 2px var(--green1);
   outline: none;
   font-size: 110%;
+  color: var(--green1);
 }
 .userinput::placeholder{
   color: var(--black);
