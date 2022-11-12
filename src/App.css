@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+*{
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Declaration of varibles..*/
+:root{
+  --white: #ffffff;
+  --grey: rgb(223, 223, 223);
+  --black: #000000;
+  --green1: rgb(47, 141, 47);
+  --green2: rgb(102, 211, 102);
+  --green3: rgb(193, 255, 193);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* For the register and login pages..*/
+.startapp{
+  height: 99.5vh;
+  border: solid 2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.userbox{
+  border: solid 1px var(--white);
+  height: fit-content;
+  width: 30rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 1rem 1rem;
+  margin: 6rem 0 0 0;
+  background-color: var(--white);
+  box-shadow: 2px 1px 30px 5px var(--grey);
+  border-radius: 15px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.heading{
+  margin-top: 1rem;
+
+  width: fit-content;
+  height: fit-content;
+}
+.logo{
+  font-size: 200%;
+  color: var(--green1);
+  font-weight: 700;
+}
+.userfield{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.userinput{
+  width: 20rem;
+  height: 2rem;
+  padding: 0.3rem 1rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-bottom: solid 2px var(--green1);
+  outline: none;
+  font-size: 110%;
+}
+.userinput::placeholder{
+  color: var(--black);
+}
+.inputbtn{
+  width: 6rem;
+  height: 3rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+  cursor: pointer;
+  background-color: var(--white);
+  border: solid 1px var(--green1);
+  color: var(--green1);
+  outline: none;
+  font-size: 105%;
+  font-weight: 600;
+}
+.inputbtn:hover{
+  background-color: var(--green1);
+  border: none;
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
