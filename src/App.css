@@ -203,5 +203,68 @@ h1{
 .pagecontent{
   border: solid 0px;
   margin: 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.topheading{
+  display: flex;
+  flex-direction: row;
+}
+.button1{
+  margin-left: 70%;
+  background-color: var(--white);
+  border: solid 1px var(--green1);
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 500;
+  color: rgb(180, 175, 203);
+}
+.button1:hover{
+  background-color: var(--green1);
+  color: white;
+}
+.contentbox{
+  margin: 2.5rem 0 0 0;
+  padding: 0 0 0 0;
+}
+.contentbox p{
+  font-size: 120%;
+  color: rgb(147, 155, 186);
   
+}
+.propertyInput{
+  display: flex;
+  flex-direction: column;
+}
+.propertyInput input{
+  margin: 0 0 1rem 0;
+  width: 35rem;
+  height: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: solid 1px rgb(153, 153, 153);
+  color: var(--green1);
+}
+.tenantInput{
+  display: flex;
+  flex-direction: column;
+}
+.tenantInput input{
+  margin: 0 0 1rem 0;
+  width: 35rem;
+  height: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: solid 1px rgb(153, 153, 153);
+  color: var(--green1);
+}
+.submitbtn{
+  height: 2rem;
+  width: 5rem;
+  background-color: var(--green1);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
 }
