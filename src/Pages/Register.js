@@ -64,7 +64,7 @@ function Register() {
     <div className='startapp'>
         <div className='userbox'>
             <div className='heading'>
-                <span style={{fontSize:"200%"}}>Welcome to </span><span className='logo'>RENTLY</span>
+                <span className='logo1'>RENT</span><span className='logo2'>LY</span>
             </div>
 
             <div className='userfield'>
@@ -74,7 +74,7 @@ function Register() {
                 <input type="text" placeholder="Date of Birth" className='userinput' onChange={(e) => console.log(e.target.value)} onFocus={() => (dob.current.type = "date")} onBlur={() => (dob.current.type = "text")} ref={dob}></input>
                 <input type="password" placeholder="New password" className='userinput' ref={password}></input>
                 <button className='inputbtn' onClick={signup}>Register</button>
-                <p>Already have an account? <Link to="/" style={{color:"var(--green1)", cursor:"pointer"}}>Login</Link></p>
+                <p>Already have an account? <Link to="/" style={{color:"var(--green1)", cursor:"pointer", textDecoration:"none"}}>Login</Link></p>
             </div>
         </div>
     </div>

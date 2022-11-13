@@ -36,14 +36,14 @@ function Login() {
     <div className='startapp'>
         <div className='userbox'>
             <div className='heading'>
-                <span style={{fontSize:"200%"}}>Welcome Back to </span><span className='logo'>RENTLY</span>
+                <span className='logo1'>RENT</span><span className='logo2'>LY</span>
             </div>
 
             <div className='userfield'>   
                 <input type="text" placeholder="Email" className='userinput' ref={email}></input>       
                 <input type="password" placeholder="New password" className='userinput' ref={password}></input>
                 <button className='inputbtn' onClick={userLogin}>Login</button>
-                <p>Don't have an account? <Link to="/register" style={{color:"var(--green1)", cursor:"pointer"}}>Register</Link></p>
+                <p>Don't have an account? <Link to="/register" style={{color:"var(--green1)", cursor:"pointer", textDecoration:"none"}}>Register</Link></p>
             </div>    
         </div>
     </div>

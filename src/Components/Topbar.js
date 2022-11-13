@@ -2,7 +2,14 @@ import React from 'react'
 
 function Topbar() {
   return (
-    <div></div>
+    <div className='topbarcont'>
+      <div className='searchcont'>
+        <div className='searchimg'></div>
+        <div>
+          <input></input>
+        </div>
+      </div>
+    </div>
   )
 }
 

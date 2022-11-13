@@ -1,8 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sono:wght@200;300;400;500;600;700;800&display=swap');
 *{
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
-
+h1{
+  margin: 0;
+}
 /* Declaration of varibles..*/
 :root{
   --white: #ffffff;
@@ -38,14 +40,36 @@
 }
 .heading{
   margin-top: 1rem;
-
   width: fit-content;
   height: fit-content;
 }
-.logo{
-  font-size: 200%;
+.heading .logo1{
+  font-family: 'Sono', sans-serif;
+  font-size: 300%;
+  color: var(--black);
+  font-weight: 500;
+}
+.heading .logo2{
+  font-family: 'Sono', sans-serif;
+  font-size: 300%;
   color: var(--green1);
-  font-weight: 700;
+  font-weight: 500;
+}
+.pageLogo{
+  width: fit-content;
+  margin: 0 0 2rem 1.4rem;
+}
+.pageLogo .logoB1{
+  font-family: 'Sono', sans-serif;
+  font-size: 250%;
+  color: var(--black);
+  font-weight: 500;
+}
+.pageLogo .logoB2{
+  font-family: 'Sono', sans-serif;
+  font-size: 250%;
+  color: var(--green1);
+  font-weight: 500;
 }
 .userfield{
   margin-top: 2rem;
@@ -86,4 +110,98 @@
   background-color: var(--green1);
   border: none;
   color: white;
+}
+
+/* Layout for the pages..*/
+.backpage{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.leftside{
+  background-color: #bcbcbc16;
+}
+.rightside{
+  display: flex;
+  flex-direction: column;
+  width: 84.1%;
+  
+}
+
+/* For the side Navigation bar...*/
+.sidebarcont{
+  border: none;
+  border-right: solid 1px rgb(220, 220, 220);
+  height: 95.5vh;
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0 1rem 0;
+
+}
+.navbox{
+  width: 100%;
+}
+.navheading{
+  margin: 0 0 -0.5rem 0.8rem;
+  color: rgb(203, 203, 203);
+  font-size: 80%;
+}
+.navcontent ul{
+  list-style: none;
+  padding: 0;
+}
+.navcontent li{
+  margin: 0;
+}
+.navselect{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0 0 1rem 0;
+}
+.navselect .smalldiv{
+  border-radius: 4px;
+  height: 1.5rem;
+  width: 0.2rem;
+  margin: 0 0.5rem 0 0;
+}
+.navselect .actualdiv{
+  border-radius: 7px;
+  height: 1.5rem;
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+}
+.navselect .actualdiv:hover{
+  background-color: rgb(245, 245, 245);
+  cursor: pointer;
+  color: var(--green1); 
+} 
+.navselect .actualdiv{
+  color: rgb(207, 208, 228);
+  font-weight: 500;
+  font-size: 90%;
+}
+
+/* For the topbar..*/
+.topbarcont{
+  border-bottom: solid 1px rgb(220, 220, 220);
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+/* For the main content of the page...*/
+.pagecontent{
+  border: solid 0px;
+  margin: 2rem 2rem;
+  
 }
