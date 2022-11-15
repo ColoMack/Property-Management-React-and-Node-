@@ -1,6 +1,14 @@
 import React, { useRef } from 'react'
 import { Link } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
+import * as FaIcons from 'react-icons/fa'
+import * as AiIcons from 'react-icons/ai'
+import * as IoIcons from 'react-icons/io'
+import * as RiIcons from 'react-icons/ri'
+import * as BsIcons from 'react-icons/bs'
+import * as BiIcons from 'react-icons/bi'
+import * as CgIcons from 'react-icons/cg'
+import * as CiIcons from 'react-icons/ci'
 
 function Sidenavbar() {
   let activeStyle = {
@@ -44,25 +52,29 @@ function Sidenavbar() {
           <ul>
             <li>
               <div className='navselect'>
-                <NavLink style={({isActive}) => isActive ? activeStyle : notActiveStyle} to="/dashboard">Dashboard</NavLink>
+                <div className='smalldiv'></div>
+                <NavLink style={({isActive}) => isActive ? activeStyle : notActiveStyle} to="/dashboard"><RiIcons.RiDashboardLine size={20} style={{marginRight:"10px",}}/><span style={{}}>Dashboard</span></NavLink>
               </div>
             </li>
 
             <li>
               <div className='navselect'>
-                <NavLink style={({isActive}) => isActive ? activeStyle : notActiveStyle} to="/property" className='actualdiv'>Property</NavLink>
+                <div className='smalldiv'></div>
+                <NavLink style={({isActive}) => isActive ? activeStyle : notActiveStyle} to="/property" className='actualdiv'><BiIcons.BiBuildings size={20} style={{marginRight:"10px",}}/><span style={{marginRight:"18px"}}>Property</span></NavLink>
               </div>
             </li>
 
             <li>
               <div className='navselect'>
-                <NavLink style={({isActive}) => isActive ? activeStyle : notActiveStyle} to="/tenant" className='actualdiv'>Tenants</NavLink>
+                <div className='smalldiv'></div>
+                <NavLink style={({isActive}) => isActive ? activeStyle : notActiveStyle} to="/tenant" className='actualdiv'><FaIcons.FaHouseUser size={20} style={{marginRight:"10px",}}/><span style={{marginRight:"18px"}}>Tenants</span></NavLink>
               </div>
             </li>
 
             <li>
               <div className='navselect'>
-                <NavLink style={({isActive}) => isActive ? activeStyle : notActiveStyle} to="/profile" className='actualdiv'>Profile</NavLink>
+                <div className='smalldiv'></div>
+                <NavLink style={({isActive}) => isActive ? activeStyle : notActiveStyle} to="/profile" className='actualdiv'><CgIcons.CgProfile size={20} style={{marginRight:"10px",}}/><span style={{marginRight:"25px"}}>Profile</span></NavLink>
               </div>
             </li>
 
@@ -70,6 +82,15 @@ function Sidenavbar() {
 
             </div>
           </ul>
+        </div>
+      </div>
+      <div className='footernav'>
+        <div className='profilecont'>
+          <BsIcons.BsPerson style={{height:"100%", width:"100%", margin:""}}/>
+        </div>
+        <div className='logoutcont'>
+          <CiIcons.CiLogout size={30} style={{marginRight:"0.7rem"}}/>
+          <span>Logout</span>
         </div>
       </div>
     </div>

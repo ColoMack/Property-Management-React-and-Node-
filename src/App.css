@@ -188,6 +188,41 @@ h1{
 .activelink{
   background-color: black;
 }
+.footernav{
+  margin: 17rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.profilecont{
+  border: solid 1px rgb(116, 117, 134);
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  margin: 0 0 1rem 0;
+  padding: 0.1rem;
+  cursor: pointer;
+}
+.logoutcont{
+  border: solid 1px rgb(203, 203, 203);
+  cursor: pointer;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  color: rgb(116, 117, 134);
+}
+.logoutcont:hover{
+  padding: 0.59rem;
+  background-color: var(--green1);
+  color: #ffffff;
+}
+.logoutcont:active{
+  padding: 0.5rem;
+}
 
 /* For the topbar..*/
 .topbarcont{
@@ -198,6 +233,37 @@ h1{
   flex-direction: row;
   align-items: center;
   box-shadow: 1px 1px 17px -8px rgb(192, 192, 192);
+}
+
+/* For the search box*/
+.searchcont{
+  border: solid 1px rgb(203, 203, 203);
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 0 2rem;
+  padding: 0 1rem 0 0;
+  height: 2.5rem;
+  width: 25rem;
+  border-radius: 10rem;
+}
+.searchicondiv{
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.searchinput{
+  width: 100%;
+  height: 100%;
+}
+.searchinput input{
+  padding: 0.5rem 1rem;
+  width: 20.15rem;
+  height: 1.5rem;
+  border: none;
+  border-left: solid 1px rgb(203, 203, 203);
+  outline: none;
 }
 
 
